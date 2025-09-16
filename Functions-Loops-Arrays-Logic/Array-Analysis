@@ -1,0 +1,11 @@
+const array=[5,3,2,9,0]
+const max=Math.max(...array)
+console.log("Max",max);
+const min=Math.min(...array)
+console.log("Min",min);
+let sum=0;
+for(let i=0;i<array.length;i++){
+    sum +=array[i];
+}
+const average=sum/array.length;
+console.log("Average:", average);
