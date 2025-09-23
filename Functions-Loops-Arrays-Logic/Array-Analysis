@@ -1,11 +1,20 @@
-const array=[5,3,2,9,0]
-const max=Math.max(...array)
-console.log("Max",max);
-const min=Math.min(...array)
-console.log("Min",min);
-let sum=0;
-for(let i=0;i<array.length;i++){
+const array=[8,1,3,10]
+function arrayf(arr){ //To find the max,min and average of an array
+let max=arr[0];//Start with first number as maximum
+let min=arr[0];//Start with the first number as minimum
+let sum=0;//Starts with sum as zero
+for(let i=0;i<array.length;i++){//ilterates and add the current number to the sum
     sum +=array[i];
+    if (arr[i]>max){//checks if the previous number is greater than the current number
+        max=arr[i]//updates to maximum if the condition is met 
+    }
+    else if (arr[i]<min){ //checks if the previous number is less than the current number
+        min=arr[i]//updates to minimum if the condition is met
+    }
 }
-const average=sum/array.length;
-console.log("Average:", average);
+const average=sum/array.length;//calculates the average by dividing the sum with length of array
+console.log("Average:", average);//prints the result
+console.log("Max:",max);
+console.log("Min:",min);
+}
+arrayf(array);//Calls the function
