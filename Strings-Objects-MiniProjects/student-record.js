@@ -1,4 +1,4 @@
-function processStudent(){
+function processStudent(gradeThreshold){
     const students=[{//array of student
         name:"Ana",
         grade:6
@@ -6,7 +6,7 @@ function processStudent(){
         name:"Ben",
         grade:8
     }];
-    const gradeThreshold=7;
+    
     //An array storing student grade
     let highGrade=[];
     for(let i=0;i<students.length;i++){
@@ -27,4 +27,4 @@ function processStudent(){
     return {highGrade: highGrade, students: students}
  
 }
-processStudent()
+processStudent((7))

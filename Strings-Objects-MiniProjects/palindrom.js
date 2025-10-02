@@ -14,3 +14,5 @@ function checker(str){
 }
 //prints the result
 console.log(checker("fan"))
+gradeThreshold=7
+pro

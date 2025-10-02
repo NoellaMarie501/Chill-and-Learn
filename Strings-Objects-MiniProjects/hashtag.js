@@ -15,4 +15,5 @@ function hashtag(letter,string){
 //outputs the result
 console.log(hashtag("a","banana"))
 console.log(hashtag("w","hello"))
+
   
