@@ -6,7 +6,7 @@ function processStudent(){
         name:"Ben",
         grade:8
     }];
-    let gradeThreshold=7;
+    const gradeThreshold=7;
     //An array storing student grade
     let highGrade=[];
     for(let i=0;i<students.length;i++){
@@ -19,7 +19,9 @@ function processStudent(){
     //increases the student grade by one
     for(let i=0;i<students.length;i++){
          //Adds to existing grade
+          if(students[i].grade>gradeThreshold){
         students[i].grade=students[i].grade+1
+          }
     }
     console.log("after increase",students)
     return {highGrade: highGrade, students: students}
