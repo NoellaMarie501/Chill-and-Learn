@@ -12,19 +12,14 @@ function processStudent(gradeThreshold){
     for(let i=0;i<students.length;i++){
         //checks if student grade is greater than gradeThreshold
         if(students[i].grade>gradeThreshold){
+            students[i].grade++
             highGrade.push(students[i]);
         }
     }
     console.log(`grade>${gradeThreshold}:`,highGrade);
-    //increases the student grade by one
-    for(let i=0;i<students.length;i++){
-         //Adds to existing grade
-          if(students[i].grade>gradeThreshold){
-        students[i].grade=students[i].grade+1
-          }
-    }
+    
     console.log("after increase",students)
     return {highGrade: highGrade, students: students}
- 
 }
-processStudent((7))
+
+console.log(processStudent((7)))
