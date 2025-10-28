@@ -162,6 +162,11 @@ foreach($aliments as $aliment){
  }
  $output=formatpdt(["fruits"=>"apple","price"=>"80"]);
  echo $output;
+ //dealing with require and include
+ //include is like a merging factor,merge two files together 
+ //require does the same thing 
+
+ //Get sends data in the URL
  ?>
 </body>
 </html>
